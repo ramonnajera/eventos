@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>superse</title>
+</head>
+<body>
+    <header class="container mx-auto py-5 mt-5 border rounded-full">
+        <nav class="flex justify-around">
+            <div>
+                <a href="/">Superse</a>
+            </div>
+            <div>
+                <ul class="flex gap-3">
+                    <li><a class="link" href="/virtuales">Eventos virtuales</a></li>
+                    <li><a class="link" href="/precenciales">Eventos precenciales</a></li>
+                    <li><a class="link" href="/contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex gap-3">
+
+                    <!-- Botón para abrir el modal de inicio de sesión -->
+                    <li><a data-modal-target="#loginModal" type="button" class="btn btn-primary" href="/login">Iniciar sesión</a></li>
+
+                    <!-- Modal de inicio de sesión -->
+                    <div id="loginModal" class="fixed z-10 inset-0 overflow-y-auto hidden flex items-center justify-center bg-black bg-opacity-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                        <div class="bg-white p-5 rounded shadow-lg">
+                            <!-- Aquí va el contenido del modal de inicio de sesión -->
+                            <div>
+                                <p class="">Login</p>
+                            </div>
+                            <button data-modal-close type="button">Cerrar</button>
+                        </div>
+                    </div>
+
+                    <!-- Botón para abrir el modal de registro -->
+                    <li><a data-modal-target="#registerModal" type="button" class="btn btn-outline" href="/register">Registrarse</a></li>
+
+                    <!-- Modal de registro -->
+                    <div id="registerModal" class="fixed z-10 inset-0 overflow-y-auto hidden flex items-center justify-center bg-black bg-opacity-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                        <div class="bg-white p-5 rounded shadow-lg">
+                            <!-- Aquí va el contenido del modal de registro -->
+                            <div>
+                                <p>Registro</p>
+                            </div>
+                            <button data-modal-close type="button">Cerrar</button>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
